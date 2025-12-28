@@ -6,6 +6,8 @@ import {
   useCallback,
 } from "react";
 
+import citiesData from "../data/cities.json";
+
 const CitiesContext = createContext();
 
 const initialState = {
@@ -76,18 +78,13 @@ function CitiesProvider({ children }) {
       dispatch({ type: "loading" });
 
       try {
-        const res = await fetch("/data/cities.json");
-        const data = await res.json();
-
         dispatch({
           type: "cities/loaded",
-          payload: data.cities,
+          payload: citiesData.cities,
         });
-      } catch {
-        dispatch({
-          type: "rejected",
-          payload: "There was an error loading cities...",
-        });
+      } catch (err) {
+        console.error(err);
+        dispatch({ type: "cities/rejected", payload: err.message });
       }
     }
 
