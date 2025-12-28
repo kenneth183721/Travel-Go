@@ -1,1 +1,0 @@
-import{a as e,o as t}from"./index-3oX__sRQ.js";var n={logo:`_logo_1tiug_1`},r=e();function i(){return(0,r.jsx)(t,{to:`/`,children:(0,r.jsx)(`img`,{src:`/Travel go.png`,alt:`Travel Go logo`,className:n.logo})})}var a=i;export{a as t};

@@ -1,1 +1,0 @@
-import{a as e}from"./index-3oX__sRQ.js";var t=e();function n(){return(0,t.jsx)(`div`,{children:(0,t.jsx)(`h1`,{children:`Page not found 😢`})})}export{n as default};
