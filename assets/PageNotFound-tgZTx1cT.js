@@ -1,1 +1,0 @@
-import{a as e}from"./index-Bq4Eeht4.js";var t=e();function n(){return(0,t.jsx)(`div`,{children:(0,t.jsx)(`h1`,{children:`Page not found 😢`})})}export{n as default};
