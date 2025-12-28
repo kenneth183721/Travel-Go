@@ -5,8 +5,8 @@ function Logo() {
   return (
     <Link to="/">
       <img
-        src="/Travel_Go_Logo.png"
-        alt="Travel-Go-logo"
+        src={`${import.meta.env.BASE_URL}Travel_Go_Logo.png`}
+        alt="Travel-Go-Logo"
         className={styles.logo}
       />
     </Link>
